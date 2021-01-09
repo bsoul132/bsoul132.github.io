@@ -1,0 +1,348 @@
+*{
+    overflow-x: hidden;
+  }
+  body {
+    margin:0;
+    font-family: Arial;
+    background-color: #343a40;
+    color: #99aab5;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  
+  div.scrollmenu {
+    background-color: #292b2f;
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+  }
+  
+  div.scrollmenu .btnStyle {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  
+  }
+  
+  div.scrollmenu .btnStyle:hover {
+    background-color: #36383e;
+  }
+  
+  /* width */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #2f3136;
+    border-radius: 2em;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #202225;
+    border-radius: 2em;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #202225;
+  }
+  
+  
+  
+  .adsenseBox{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #2d3236;
+    z-index: 99;
+    border-bottom: 2px solid #c42222;
+    text-align: center;
+  }
+  
+  .topnav .btnStyle {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 21px 24px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav .headerName{
+    float: left;
+    display: block;
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding: 21px 24px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav .headerName:hover, .navdd:hover .navddbtn {
+    background-color: #36383e;
+    color: #c42222;
+  }
+  
+  .userImage{
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    margin: 5px 15px 2px 0px;
+    display: inline-block;
+    transition-duration: 0.4s;
+    display: inline-block;
+  }
+  
+  .userImage .userImgSize{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid #c42222;
+    text-align: center;
+  }
+  
+  .userDropContent{
+    display: none;
+    position: absolute;
+    background-color: #2f3136;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    text-align: left;
+    margin-left: -140px;
+    border-radius: 5px;
+  }
+  
+  .userImage:hover .userDropContent{
+    display: block;
+  }
+  
+  .userDropContent .userButton{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600px;
+  }
+  
+  .userButton:hover{
+    background-color: #7289da;
+    border-radius: 5px;
+  }
+  
+  .noClickCursor{
+    cursor: no-drop;
+  }
+  
+  .userDropContent .userProfile{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #202225;
+    padding-bottom: 10px;
+  }
+  
+  .userProfileImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    padding: 10px;
+  }
+  
+  .userProfileName{
+    color: white;
+    font-weight: 600;
+    font-size: auto;
+  }
+  
+  
+  .navButton{
+    width: auto;
+    height: auto;
+    color: white;
+    font-weight: 700;
+    background-color: none;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 14px 24px 2px 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #c42222;
+    border-radius: 5px;
+    
+  }
+  
+  .navButton:hover {
+    background-color: #c42222;
+  }
+  
+  .navButton:active {
+    background-color: #c42222;
+  }
+  
+  button:focus {
+    border: none;
+    outline: none;
+  }
+  
+  
+  .activeColor {
+    background-color: #292b2f;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .navdd {
+    float: left;
+    overflow: hidden;
+  }
+  
+  .navdd .navddbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 21px 24px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  .navdd-content {
+    display: none;
+    position: absolute;
+    background-color: #2d3236;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+  }
+  
+  .navdd-content .btnStyle {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .topnav .btnStyle:hover, .navdd:hover .navddbtn {
+    background-color: #36383e;
+    color: #c42222;
+  }
+  
+  .navdd-content .btnStyle:hover {
+    background-color: #36383e;
+    color: #c42222;
+  }
+  
+  .navdd:hover .navdd-content {
+    display: block;
+  }
+  
+  
+  
+  .footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #343a40;
+    height: 30px;
+    color: white;
+    text-align: center;
+    z-index: 99;
+    margin-top: 20px;
+  }
+  .footerCenter{
+    width: 100%;
+    height: 25px;
+    display: inline-block;
+    text-align: center;
+    padding: 7px 0 1px 0;
+  }
+  
+  
+  
+  @media screen and (max-width: 800px) {
+  
+  
+  
+    .topnav .btnStyle, .navdd .navddbtn {
+      display: none;
+    }
+  
+  
+    .topnav .btnStyle.icon {
+      float: left;
+      display: block;
+    }
+  
+  
+    .topnav .headerName{
+      float: none;
+      display: inline-block;
+      color: white;
+      font-weight: 600;
+      text-align: center;
+      padding: 21px 24px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+  
+  
+  
+  
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .topnav.responsive .btnStyle {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+    .navButton{
+      display: none;
+    }
+    .topnav.responsive .navButton {
+      text-align: center;
+      float: none;
+      padding: 8px 24px;
+      display: inline-block;
+      margin: 0px;
+  
+  
+  
+    }
+  
+    .topnav.responsive .navdd {float: none;width: auto;}
+    .topnav.responsive .navdd-content {position: relative;}
+    .topnav.responsive .navdd .navddbtn {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+  
+  }
